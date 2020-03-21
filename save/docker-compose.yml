@@ -4,22 +4,9 @@
 # docker stack deploy node-red --compose-file docker-compose-node-red.yml
 # docker-compose -f docker-compose-node-red.yml -p myNoderedProject up
 ################################################################################
-version: "3"
+version: "2"
 
 services:
-  web:
-    build: backend/.
-    container_name: web
-    ports:
-      - "3000:3000"
-    networks:
-      - node-red-net
-    volumes:
-      - ./backend:/usr/src/app
-    depends_on:
-      - redis
-      - mongo
-    
   node-red:
     image: nodered/node-red-docker:latest
     container_name: nodered
