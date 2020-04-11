@@ -641,25 +641,6 @@
     }
    }
   },
-  "node-red-contrib-amqp2": {
-   "name": "node-red-contrib-amqp2",
-   "version": "0.1.0",
-   "local": true,
-   "nodes": {
-    "amqp2": {
-     "name": "amqp2",
-     "types": [
-      "amqp2 in",
-      "amqp2 out",
-      "amqp2-server"
-     ],
-     "enabled": true,
-     "local": true,
-     "module": "node-red-contrib-amqp2",
-     "file": "/data/node_modules/node-red-contrib-amqp2/lib/amqp2.js"
-    }
-   }
-  },
   "postgrestor": {
    "name": "postgrestor",
    "version": "0.0.2",
@@ -851,27 +832,10 @@
     }
    }
   },
-  "node-red-contrib-lodash": {
-   "name": "node-red-contrib-lodash",
-   "version": "0.0.2",
-   "local": false,
-   "nodes": {
-    "lodash": {
-     "name": "lodash",
-     "types": [
-      "lodash"
-     ],
-     "enabled": true,
-     "local": true,
-     "module": "node-red-contrib-lodash",
-     "file": "/data/node_modules/node-red-contrib-lodash/lodash/lodash.js"
-    }
-   }
-  },
   "node-red-contrib-moment": {
    "name": "node-red-contrib-moment",
    "version": "3.0.3",
-   "local": false,
+   "local": true,
    "nodes": {
     "moment": {
      "name": "moment",
@@ -892,6 +856,25 @@
      "local": true,
      "module": "node-red-contrib-moment",
      "file": "/data/node_modules/node-red-contrib-moment/moment/nrhumanizer.js"
+    }
+   }
+  },
+  "node-red-contrib-amqp-docker": {
+   "name": "node-red-contrib-amqp-docker",
+   "version": "0.0.2",
+   "local": true,
+   "nodes": {
+    "amqp": {
+     "name": "amqp",
+     "types": [
+      "amqp in",
+      "amqp out",
+      "amqp-server"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-amqp-docker",
+     "file": "/data/node_modules/node-red-contrib-amqp-docker/lib/amqp.js"
     }
    }
   }
